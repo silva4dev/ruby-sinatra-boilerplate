@@ -1,0 +1,15 @@
+<h1>Detail about Post</h1>
+
+<h2>Title: <%= @post.title %></h2>
+<p>URL: <%= @post.url %></p>
+
+<h1>Votes: <%= @post.votes %></h1>
+
+<form action="/upvote/<%= @post.id %>" method="post">
+  <input type="submit" value="Vote">
+</form>
+
+
+
+
+<a href="/">Back to all posts</a>
